@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-blue-50 text-slate-900 font-sans antialiased;
+  }
+}
+
+.elegant-card {
+  @apply bg-white border border-blue-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[2.5rem];
+}
+
+.vibrant-card-indigo {
+  @apply bg-indigo-600 text-white shadow-xl shadow-indigo-200 rounded-[2.5rem];
+}
+
+.vibrant-card-emerald {
+  @apply bg-emerald-500 text-white shadow-xl shadow-emerald-200 rounded-[2.5rem];
+}
+
+.vibrant-card-amber {
+  @apply bg-amber-400 text-amber-950 shadow-xl shadow-amber-100 rounded-[2.5rem];
+}
+
+.elegant-button {
+  @apply bg-indigo-600 text-white px-8 py-4 rounded-full font-bold transition-all hover:bg-indigo-700 hover:shadow-xl active:scale-95 disabled:opacity-50;
+}
+
+.elegant-input {
+  @apply bg-white border-2 border-slate-100 rounded-2xl px-5 py-4 text-sm focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 outline-none transition-all;
+}
+
+.elegant-badge {
+  @apply px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.15em];
+}
+
+.school-gradient {
+  @apply bg-gradient-to-br from-indigo-600 via-violet-600 to-purple-600;
+}

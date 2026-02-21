@@ -1,0 +1,5 @@
+{
+  "name": "Bel Sekolah Otomatis AI",
+  "description": "Sistem bel sekolah pintar dengan pengumuman suara otomatis menggunakan AI untuk menyebutkan jam pelajaran, nama guru, dan waktu masuk kelas.",
+  "requestFramePermissions": ["microphone"]
+}
